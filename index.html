@@ -6,24 +6,23 @@
     </head>
 
     <body>
-        <h1>Unit Converter</h1>
 
-        <form>
-            <input type="text" id="value" placeholder="Enter value..">
-            
-            <select id="kilometre">
+        <h2>Unit Converter</h2>
 
-            <optgroup>
-              <option value="Miles to Kilometers">Miles to Kilometers</option>
-              <option value="Miles to Meters">Miles to Meters</option>
-            </optgroup>
+        <div class="converter">
 
-          </select>
-            
-            <button> Convert </button>
-           </form>           
+            <input type="number" id="value" placeholder="Enter value..">
 
-           <h4>Result: 0</h4>
+            <select id="unit">
+                <option value="milesToKm">Miles to Kilometers</option>
+                <option value="kmToMiles">Kilometers to Miles</option>
+            </select>
+
+            <button onclick="convert()">Convert</button>
+
+            <div class="result" id="result">Result: 0</div>
+        </div>
+        <script src="script.js"></script>
         
     </body>
 
