@@ -8,20 +8,21 @@
     <body>
 
         <h2>Unit Converter</h2>
+            
+                <div class="converter">
 
-        <div class="converter">
+                    <input type="number" id="value" placeholder="Enter value..">
 
-            <input type="number" id="value" placeholder="Enter value..">
+                    <select id="unit">
+                        <option value="milesToKm">Miles to Kilometers</option>
+                        <option value="kmToMiles">Kilometers to Miles</option>
+                    </select>
 
-            <select id="unit">
-                <option value="milesToKm">Miles to Kilometers</option>
-                <option value="kmToMiles">Kilometers to Miles</option>
-            </select>
+                    <button onclick="convert()">Convert</button>
+                </div>
 
-            <button onclick="convert()">Convert</button>
+                <div class="result" id="result">Result: 0</div>
 
-            <div class="result" id="result">Result: 0</div>
-        </div>
         <script src="script.js"></script>
         
     </body>
