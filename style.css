@@ -24,8 +24,9 @@ select{
     margin-bottom: 0px;
     display: grid;
     grid-template-columns: 230px 230px 80px;
-    grid-template-rows: 30px 30px 30px;
+    grid-template-rows: 30px;
     column-gap: 12px;
+    margin-bottom: 16px;
 }
 
 #result{
